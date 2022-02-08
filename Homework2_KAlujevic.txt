@@ -1,0 +1,23 @@
+##############################################################################
+########################## Homework 2 by K Alujevic ##########################
+#### Code for uploading homework to github repository with a collaborator ####
+##############################################################################
+
+cd Desktop
+ls
+mkdir Homework_DataScience
+cd Homework_DataScience
+git init
+git checkout -b main
+mv Homework1_KAlujevic.docx Homework_DataScience
+cd Homework_DataScience
+ls
+git add Homework1_KAlujevic.docx
+git commit -m "Submitting Homework 1"
+touch Homework2_KAlujevic.txt
+nano Homework2_KAlujevic.txt
+git add Homework2_KAlujevic.txt
+git commit -m "Code used for submitting Homework 2"
+git status
+git remote add origin https://github.com/kalujevic/Homework_DataScience.git
+git push -u origin main
