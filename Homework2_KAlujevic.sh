@@ -1,0 +1,42 @@
+#!/usr/bin/sh
+
+##############################################################################
+########################## Homework 2 by K Alujevic ##########################
+#### Code for uploading homework to github repository with a collaborator ####
+##############################################################################
+
+cd Desktop
+ls
+mkdir Homework_DataScience
+cd Homework_DataScience
+git init
+git checkout -b main
+cd ..
+mv Homework1_KAlujevic.docx Homework_DataScience
+cd Homework_DataScience
+ls
+git add Homework1_KAlujevic.docx
+git commit -m "Submitting Homework 1"
+touch Homework2_KAlujevic.txt
+git add Homework2_KAlujevic.txt
+git commit -m "Code used for submitting Homework 2"
+git status
+git remote add origin https://github.com/kalujevic/Homework_DataScience.git
+git push -u origin main
+nano Homework2_KAlujevic.txt
+git add Homework2_KAlujevic.txt
+git commit -m "Code for submitting Homework 2"
+git status
+git push -u origin main
+nano Homework2_KAlujevic.txt  # had to make some edits
+git add Homework2_KAlujevic.txt
+git commit -m "Fixing an error"
+git push -u origin main
+nano Homework2_KAlujevic.txt # realized I ran git remote add origin multiple times and I didn't need to so I removed it
+git add Homework2_KAlujevic.txt
+git commit -m "Fixing error; removed multiple git remote add origin"
+git push -u origin main
+nano Homework2_KAlujevic.sh # created a script file (initially I made a txt file with the code
+git add Homework2_KAlujevic.sh
+git commit -m "Creating a script with the code in addition to text file I originally made"
+git push -u origin main
